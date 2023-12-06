@@ -1,0 +1,44 @@
+<section class="row">
+    <h1 class="col-12">House Page</h1>
+</section>
+<section class="row">
+    <div class="col-6">
+        <form onsubmit="" class="row">
+            <div class="col-12">List Your House</div>
+            <div class="col-6">
+                <label for="year"></label>
+                <input type="date">
+            </div>
+            <div class="col-6">
+                <label for="price">Price</label>
+                <input type="number" min="0" max="1000000000" value="250000">
+            </div>
+            <div class="col-6">
+                <label for="bedrooms">Bedrooms: 0</label>
+                <input type="range" min="0" max="10">
+            </div>
+            <div class="col-6">
+                <label for="bathrooms">Bathrooms: 0</label>
+                <input type="range" min="0" max="10">
+            </div>
+            <div class="col-6">
+                <label for="sqft">SQFT:</label>
+                <input type="number" min="1" max="100000">
+            </div>
+            <div class="col-6">
+                <label for="imgUrl">Image Link</label>
+                <input type="url">
+            </div>
+            <div class="col-12">
+                <label for="description">Short Description</label>
+                <input type="text" min="0" max="300" placeholder="300 Max Characters">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<section id="house-list" class="row"><!-- Houses Go Here --></section>
