@@ -17,7 +17,7 @@ export class House {
 
     get houseListing(){
         return `
-        <div class="col-6 col-md-4 w-fit card d-flex justify-content-center align-items-center text-center w-10 p-0 bg-dark text-light border-greg">
+        <div class="col-6 col-md-4 w-fit card d-flex justify-content-center align-items-center text-center w-10 p-0 m-2 bg-dark text-light border-greg">
 
             <div class="w-100 house-listing p-1  border-greg">
                 <img class="img-fluid rounded" src="${this.imgUrl}" alt="">
@@ -30,7 +30,7 @@ export class House {
             </div>
 
             <div class="d-flex justify-content-evenly w-75 pb-2">
-                <button onclick="app.HouseController.addLikes()" class="btn btn-outline-info w-25"><i class="mdi mdi-thumb-up"></i></button>
+                <button onclick="app.HouseController.addLikes()" class="btn btn-outline-greg w-25"><i class="mdi mdi-thumb-up"></i></button>
                 <button onclick="app.HouseController.removeHouse('${this.id}')" class="btn btn-outline-danger w-25"> <i <i class="mdi mdi-trash-can-outline"></i></button>
             </div>
         </div>`
