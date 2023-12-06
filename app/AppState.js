@@ -35,7 +35,14 @@ class ObservableAppState extends EventEmitter {
     })
   ]
   houses = [
-    new House({year:'1974', bedrooms:3, bathrooms:2.5, sqft:1400, price:375000, description:'Newly renovated mid-century modern home', imgUrl:'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'})
+    new House({
+      year:'1974',
+      bedrooms:3,
+      bathrooms:2.5,
+      sqft:1400,
+      price:375000,
+      description:'Newly renovated mid-century modern home', 
+      imgUrl:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D'})
 ]
 }
 

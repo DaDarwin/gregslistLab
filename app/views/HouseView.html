@@ -3,35 +3,35 @@
 </section>
 <section class="row">
     <div class="col-6">
-        <form onsubmit="" class="row">
+        <form onsubmit="app.HouseController.addHouse()" class="row">
             <div class="col-12">List Your House</div>
             <div class="col-6">
                 <label for="year"></label>
-                <input type="date">
+                <input name="year" type="number" min="1800" max="2030">
             </div>
             <div class="col-6">
                 <label for="price">Price</label>
-                <input type="number" min="0" max="1000000000" value="250000">
+                <input required name="price" type="number" min="0" max="1000000000" value="250000">
             </div>
             <div class="col-6">
                 <label for="bedrooms">Bedrooms: 0</label>
-                <input type="range" min="0" max="10">
+                <input required name="bedrooms" type="range" min="0" max="10">
             </div>
             <div class="col-6">
                 <label for="bathrooms">Bathrooms: 0</label>
-                <input type="range" min="0" max="10">
+                <input required name="bathrooms" type="range" min="0" max="10">
             </div>
             <div class="col-6">
                 <label for="sqft">SQFT:</label>
-                <input type="number" min="1" max="100000">
+                <input required name="sqft" type="number" min="1" max="100000">
             </div>
             <div class="col-6">
                 <label for="imgUrl">Image Link</label>
-                <input type="url">
+                <input required name="imgUrl" type="url">
             </div>
             <div class="col-12">
                 <label for="description">Short Description</label>
-                <input type="text" min="0" max="300" placeholder="300 Max Characters">
+                <input required name="description" type="text" min="0" max="300" placeholder="300 Max Characters">
             </div>
             <div>
                 <button>Submit</button>
@@ -39,6 +39,19 @@
         </form>
     </div>
 
-</section>
+    <!-- <div class="col-6 col-md-4 w-fit card d-flex justify-content-center align-items-center text-center w-10 p-0 bg-dark text-light border-greg">
+        <div class="w-100 house-listing p-1  border-greg"><img class="img-fluid rounded" src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D" alt=""></div>
+        <div class="w-75 p-2 d-flex justify-content-center flex-column align-items-center">
+            <h5>1974 3 Bedrooms 2.5 Bath Home</h3>
+            <h6>Newly renovated mid-century modern home</h4>
+            <h6>SQFT:1400, Price:375000,</h4>
+        </div>
+        <div class="d-flex justify-content-evenly w-75 pb-2">
+            <button onclick="app.HouseController.addLikes()" class="btn btn-outline-info w-25"><i class="mdi mdi-thumb-up"></i></button>
+            <button onclick="app.HouseController.removeHouse()" class="btn btn-outline-danger w-25"> <i <i class="mdi mdi-trash-can-outline"></i></button>
+        </div>
+    </div>
+</section> -->
 
-<section id="house-list" class="row"><!-- Houses Go Here --></section>
+<section id="house-list" class="row"><!-- Houses Go Here -->
+</section>

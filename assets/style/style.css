@@ -8,3 +8,9 @@
 .car-icon{
   filter: drop-shadow(0px 0px 2px black);
 }
+
+.border-greg{
+  border-color: #7ed957;
+  border-width: 2px;
+  box-shadow:0,0,5px #7ed957;
+}
